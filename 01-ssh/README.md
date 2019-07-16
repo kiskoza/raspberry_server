@@ -3,6 +3,7 @@
 1. Login as pi / raspberry
 2. Change hostname
   * `sudo bash -c 'echo armin > /etc/hostname'`
+  * `sudo sed -i 's/raspberrypi/armin/g' /etc/hosts`
 3. Create a user
   * `sudo adduser kozaroczy`
   * `sudo usermod -aG sudo kozaroczy`
