@@ -1,0 +1,11 @@
+[Unit]
+Description=Home Assistant
+After=network-online.target
+
+[Service]
+Type=simple
+User=homeassistant
+ExecStart=/mnt/yoda/homeassistant/bin/hass -c "/mnt/yoda/homeassistant/.homeassistant"
+
+[Install]
+WantedBy=multi-user.target
