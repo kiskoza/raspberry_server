@@ -1,0 +1,15 @@
+[Unit]
+Description=Calibre
+After=network-online.target
+
+[Service]
+Type=simple
+User=calibre
+ExecStart=/usr/bin/calibre-server /mnt/yoda/calibre/library \
+                                  --port=8401 \
+                                  --enable-auth --auth-mode=basic \
+                                  --ban-after=4 --ban-for=1440 \
+                                  --disable-use-bonjour
+
+[Install]
+WantedBy=multi-user.target
