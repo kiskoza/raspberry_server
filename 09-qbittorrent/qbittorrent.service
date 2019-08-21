@@ -1,0 +1,11 @@
+[Unit]
+Description=qBittorrent
+After=network-online.target
+
+[Service]
+Type=simple
+User=qbittorrent
+ExecStart=/usr/bin/qbittorrent-nox
+
+[Install]
+WantedBy=multi-user.target
