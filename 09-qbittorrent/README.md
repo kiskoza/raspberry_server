@@ -6,9 +6,8 @@
   * Use the new user with `sudo -u qbittorrent -H -s`
 2. Set up the environment
   * Start it with `qbittorrent-nox` to generate files
-  * `mkdir downloads`
-  * `mkdir incomplete`
-  * `mkdir incoming`
+  * Use the `/mnt/christa/downloads` external drive
+  * `mkdir /mnt/christa/downloads/.incomplete`
   * `cp qBittorrent.conf /mnt/yoda/qbittorrent/.config/qBittorrent/qBittorrent.conf`
   * Change auth from admin / adminadmin
 3. Start qBittorrent automatically
