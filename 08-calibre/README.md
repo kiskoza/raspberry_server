@@ -2,12 +2,12 @@
 
 1. Install Calibre and create a new user
   * `sudo apt-get install calibre`
-  * `sudo useradd -rm -d /mnt/yoda/calibre calibre`
+  * `sudo useradd -rm -d /home/calibre calibre`
   * Use the new user with `sudo -u calibre -H -s`
 2. Make the library
   * `mkdir library`
   * Copy the existing books there
-  * Start server with `calibre-server  /mnt/yoda/calibre/library`
+  * Start server with `calibre-server /home/calibre/library`
 3. Set up users with `calibre-server --manage-users`
 4. Start Calibre automatically
   * `sudo cp calibre.service /etc/systemd/system/calibre.service`
