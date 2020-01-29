@@ -1,7 +1,7 @@
 [Unit]
 Description=qBittorrent
 After=network-online.target local-fs.target
-BindsTo=mnt-christa-downloads.mount
+BindsTo=home-qbittorrent-downloads.mount
 
 [Service]
 Type=simple
