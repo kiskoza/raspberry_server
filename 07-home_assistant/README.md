@@ -21,7 +21,7 @@
   * `sudo systemctl --system daemon-reload`
   * `sudo systemctl enable home_assistant.service`
 5. Set up Nginx
-  * `sudo cp home_assistant.conf /etc/nginx/sites-available/`
+  * `sudo cp nginx.conf /etc/nginx/sites-available/home_assistant.conf`
   * `sudo ln -s /etc/nginx/sites-available/home_assistant.conf /etc/nginx/sites-enabled/home_assistant.conf`
   * `sudo rm /etc/nginx/sites-enabled/default`
 6. Update Home Assistant

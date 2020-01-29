@@ -14,6 +14,6 @@
   * `sudo systemctl --system daemon-reload`
   * `sudo systemctl enable calibre.service`
 5. Set up Nginx
-  * `sudo cp calibre.conf /etc/nginx/sites-available/`
+  * `sudo cp nginx.conf /etc/nginx/sites-available/calibre.conf`
   * `sudo ln -s /etc/nginx/sites-available/calibre.conf /etc/nginx/sites-enabled/calibre.conf`
   * Run certbot
