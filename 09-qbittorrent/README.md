@@ -1,4 +1,4 @@
-## Calibre
+## qBittorrent
 
 1. Install qBittorrent and create a new user
   * `sudo apt-get install qbittorrent-nox`
