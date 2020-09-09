@@ -9,12 +9,13 @@
   * `python3 -m venv virtualenv`
   * `source virtualenv/bin/activate`
   * `python3 -m pip install wheel`
-  * `pip3 install homeassistant`
+  * `pip3 install homeassistant==<VERSION>`
 3. Get the configs
   * `git clone https://github.com/kiskoza/homeassistant.git .homeassistant`
   * `git submodule init`
   * `git submodule update`
   * Then copy the `secrets.yaml` and `known_devices.yaml` to the config dir
+  * Copy the `.storage` folder and clean up the cached data
   * Start it manually with `hass`
 4. Start Home Assistant automatically
   * `sudo cp home_assistant.service /etc/systemd/system/home_assistant.service`
