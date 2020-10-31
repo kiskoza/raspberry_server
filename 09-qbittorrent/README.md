@@ -6,13 +6,11 @@
   * Use the new user with `sudo -u qbittorrent -H -s`
 2. Add network drives
   * `mkdir /home/qbittorrent/downloads`
-  * `mkdir /home/qbittorrent/incomplete`
   * `echo "192.168.42.95:/data2/downloads /home/qbittorrent/downloads nfs defaults 0 0" | sudo tee -a /etc/fstab`
   * `sudo mount -a`
+  * `mkdir /home/qbittorrent/downloads/.incomplete`
 2. Set up the environment
   * Start it with `qbittorrent-nox` to generate files
-  * Use `/home/qbittorrent/downloads` as downloads folder
-  * Use `/home/qbittorrent/incomplete` as incomplete folder
   * `cp qBittorrent.conf /home/qbittorrent/.config/qBittorrent/qBittorrent.conf`
   * Change auth from admin / adminadmin
 3. Start qBittorrent automatically
